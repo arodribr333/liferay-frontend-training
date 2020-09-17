@@ -27,10 +27,10 @@
 			<div id="heading" class="navbar navbar-classic navbar-top py-3">
 				<div class="container user-personal-bar">
 					<div class="align-items-center autofit-row"aria-level="1" class="site-title" role="heading">
-						<a class="${logo_css_class} align-items-center d-md-inline-flex d-sm-none d-none logo-md" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-							<img alt="${logo_description}" class="mr-2" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
+						<a class="${logo_css_class} align-items-center d-md-inline-flex d-sm-none d-none logo-md ${theme_class}-header__link" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+							<img alt="${logo_description}" class="${theme_class}-header__link--logo mr-2" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
 							<#if show_site_name>
-								<h2 class="font-weight-bold h2 mb-0 text-dark" role="heading" aria-level="1">${site_name}</h2>
+								<h2 class="font-weight-bold h2 mb-0 ${theme_class}-header__link--text" role="heading" aria-level="1">${site_name}</h2>
 							</#if>
 						</a>
 
@@ -38,26 +38,26 @@
 						
 						<div class="autofit-col autofit-col-expand">
 							<#if show_header_search>
-								<div class="justify-content-md-end mr-4 navbar-form" role="search">
+								<div class="justify-content-md-end mr-4 navbar-form ${theme_class}-header__search" role="search">
 									<@liferay.search_bar default_preferences="${preferences}" />
 								</div>
 							</#if>
 						</div>
 
-						<div class="autofit-col">
+						<div class="autofit-col ${theme_class}-header__userbar">
 							<@liferay.user_personal_bar />
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="navbar navbar-classic navbar-expand-md navbar-light pb-3 ${theme_class}-navegation">
+			<div class="navbar navbar-classic navbar-expand-md ${theme_class}-navegation">
 				<div class="container">
 					<a class="${logo_css_class} align-items-center d-inline-flex d-md-none logo-xs" href="${site_default_url}" rel="nofollow">
 						<img alt="${logo_description}" class="mr-2" height="56" src="${site_logo}" />
 
 						<#if show_site_name>
-							<h2 class="font-weight-bold h2 mb-0 text-dark">${site_name}</h2>
+							<h2 class="font-weight-bold h2 mb-0">${site_name}</h2>
 						</#if>
 					</a>
 

@@ -1,0 +1,61 @@
+@import '../tools/functions';
+
+.#{$app}header{
+    &__link{
+        &--logo{
+            padding: rem(4);
+            border-radius: 50%;
+            border: rem(2) solid var(--color-primary);
+            background-color: var(--color-tertiary);
+        }
+        &--text{
+            color: var(--color-tertiary);
+        }
+        &:hover,&:focus{
+            .#{$app}header__link{
+                &--text{
+                    color: var(--color-primary-dark);
+                }
+            }
+        }
+    }
+    &__search{
+        .form{
+            &-control{
+                background-color: var(--color-tertiary-light);
+                &:focus{
+                    border-color: var(--color-primary);
+                }
+            }
+        }
+        .input-group-inset{
+            &-item{
+                background-color: var(--color-tertiary-light);
+            }
+            &:focus{
+                ~ .input-group-inset-item{
+                    background-color: var(--color-tertiary-light);
+                    border-color: var(--color-primary);
+                }
+            }
+        }
+        .lexicon{
+            &-icon{
+                color: var(--color-tertiary-darker);
+            }
+        }
+    }
+    &__userbar{}
+    .#{$app}portlet{
+        &__title{
+            position: absolute;
+            left: -999999px;
+        }
+    }
+    .navbar{
+        &-classic{
+            background-color: var(--color-tertiary-darker);
+            border-bottom: rem(2) solid var(--color-primary-dark);
+        }
+    }
+}

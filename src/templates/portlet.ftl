@@ -54,8 +54,8 @@
 		</#if>
 
 		<div class="autofit-float autofit-row portlet-header">
-			<div class="autofit-col autofit-col-expand">
-				<h2 class="portlet-title-text">${portlet_title}</h2>
+			<div class="autofit-col autofit-col-expand ${theme_class_portlet}__title">
+				<h2 class="portlet-title-text ${theme_class_portlet}__title-text">${portlet_title}</h2>
 			</div>
 
 			<div class="autofit-col autofit-col-end">

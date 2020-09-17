@@ -6,9 +6,9 @@ body {
 
 body {
     margin: 0;
-    background-color: white;
     overflow-x: hidden;
     font-family: var(--liferay-fonts);
+    background-color: var(--color-tertiary-light);
     // color: var(--color-tertiary);
 }
 p{

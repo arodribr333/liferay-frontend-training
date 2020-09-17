@@ -1,0 +1,35 @@
+@import "../tools/functions";
+
+.#{$app}navegation {
+    .portlet {
+        &-content {
+            &-editable {
+                border: 0 none;
+            }
+        }
+        &-navegation{
+            .navbar {
+                &-classic {
+                    .nav {
+                        &-item {
+                            &.selected,
+                            &.active {
+                                .nav-link {
+                                }
+                            }
+                        }
+                        &-link {
+                            color: var(--color-tertiary-dark);
+                            background-color: var(--color-primary-dark);
+                            &:hover,
+                            &:focus {
+                                color: var(--color-primary-light);
+                                background-color: var(--color-tertiary-dark);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
