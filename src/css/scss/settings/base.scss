@@ -1,0 +1,19 @@
+@import '../tools/functions';
+html,
+body {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+    font-family: var(--liferay-fonts);
+    // color: var(--color-tertiary);
+}
+p{
+    margin-bottom: 0;
+}
+time{
+    line-height: 1;
+}

@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------------
+//    #CALC PIXEL TO REM
+//------------------------------------------------------------------*/
+//Example SCSS without function -->  width: calc(100% - 50px);
+//Example SCSS with function --> width: remcalc(100%, " - " , rem(50));
+//Example SCSS with function --> width: remcalcdivider(100%, " - " , rem(50), 2);
+
+@function remcalc($percentage, $operator, $rem) {
+	@return calc(#{$percentage + $operator + $rem});
+}
+@function remcalcdivider($percentage, $operator, $rem, $divider) {
+	@return calc((#{$percentage + $operator + $rem})/#{$divider});
+}

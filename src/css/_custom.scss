@@ -1,0 +1,30 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+
+@import 'liferay-font-awesome/scss/font-awesome';
+@import 'liferay-font-awesome/scss/glyphicons';
+
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+
+// BOORTSTRAP CONFIG
+// UTILITIES
+// @import 'scss/utilities/utilities__bootstrap'; /* Only styles that we need from the library */
+
+/* ROOT VARS */
+@import 'scss/settings/root';
+@import 'scss/settings/settings__reset'; /* nav styles reset */
+
+/* TOOLS */
+@import 'scss/tools/functions';
+@import 'scss/tools/animations';
+@import 'scss/tools/keyframes';
+
+// BASE
+@import 'scss/settings/base';
+
+/* COMPONENTS */
+@import '_components';

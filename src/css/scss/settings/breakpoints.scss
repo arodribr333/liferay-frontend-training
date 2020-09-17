@@ -1,0 +1,12 @@
+
+$breakpoints: (
+    "xs"            "screen and (max-width: 35.99875rem)",
+    "sm"            "screen and (min-width: 36rem) and (max-width: 47.99875rem)",
+    "mobile"        "screen and (max-width: 47.99875rem)" "md" "screen and (min-width: 48rem(768) and (max-width: 61.99875rem)",
+    "md"    	    "screen and (min-width: 47.96rem) and (max-width: 63.96rem)",
+    "lg"      	    "screen and (min-width: 63.96rem) and (max-width: 79.96rem)",
+    "xl"            "screen and (min-width: 79.96rem)",
+    "hd"            "screen and (min-width: 120rem)",
+    "4k"            "screen and (min-width: 160rem)",
+    "landscape"     "screen and (max-device-height: 30rem) and (max-device-width: 48.75rem) and (orientation: landscape)"
+) !default;

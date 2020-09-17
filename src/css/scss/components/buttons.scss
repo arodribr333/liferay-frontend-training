@@ -1,0 +1,13 @@
+@import '../tools/functions';
+
+.#{$app}button{
+    background: 0 none;
+    border: 0 none;
+    outline: 0 none;
+    font-size: rem(16);
+
+    &:hover, &:focus, &:active{
+        outline: 0 none;
+        background-color: var(--color-secondary);
+    }
+}
