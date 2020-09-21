@@ -17,3 +17,7 @@ p{
 time{
     line-height: 1;
 }
+
+.#{$app}body{
+    font-family: var(--font);
+}

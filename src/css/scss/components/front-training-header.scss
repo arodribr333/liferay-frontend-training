@@ -18,6 +18,12 @@
                 }
             }
         }
+        &:focus {
+            outline-color: var(--color-secondary);
+            outline-style: dashed;
+            outline-offset: 0;
+            outline-width: rem(2);
+        }
     }
     &__search{
         .form{
@@ -25,6 +31,10 @@
                 background-color: var(--color-tertiary-light);
                 &:focus{
                     border-color: var(--color-primary);
+                    outline-color: var(--color-secondary);
+                    outline-style: dashed;
+                    outline-offset: 0;
+                    outline-width: rem(2);
                 }
             }
         }
@@ -45,6 +55,7 @@
             }
         }
     }
+    
     &__userbar{}
     .#{$app}portlet{
         &__title{

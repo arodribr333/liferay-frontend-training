@@ -9,11 +9,12 @@
 
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700&display=swap" rel="stylesheet">
+    <#--  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700&display=swap" rel="stylesheet">  -->
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<@liferay_util["include"] page=top_head_include />
 </head>
 
-<body class="${css_class} ${theme_class}">
+<body class="${css_class}">
 
 <@liferay_ui["quick-access"] contentId="#main-content" />
 
@@ -21,7 +22,7 @@
 
 <@liferay.control_menu />
 
-<div class="pt-0" id="wrapper">
+<div class="${theme_class}-body pt-0" id="wrapper">
 	<#if show_header>
 		<header class="${theme_class}-header" id="banner" role="banner">
 			<div id="heading" class="navbar navbar-classic navbar-top py-3">
@@ -51,17 +52,19 @@
 				</div>
 			</div>
 
-			<div class="navbar navbar-classic navbar-expand-md ${theme_class}-navegation">
-				<div class="container">
-					<a class="${logo_css_class} align-items-center d-inline-flex d-md-none logo-xs" href="${site_default_url}" rel="nofollow">
-						<img alt="${logo_description}" class="mr-2" height="56" src="${site_logo}" />
+			<div class="${theme_class}-navegation">
+				<div class="navbar navbar-classic navbar-expand-md">
+					<div class="container">
+						<a class="${logo_css_class} align-items-center d-inline-flex d-md-none logo-xs" href="${site_default_url}" rel="nofollow">
+							<img alt="${logo_description}" class="mr-2" height="56" src="${site_logo}" />
 
-						<#if show_site_name>
-							<h2 class="font-weight-bold h2 mb-0">${site_name}</h2>
-						</#if>
-					</a>
+							<#if show_site_name>
+								<h2 class="font-weight-bold h2 mb-0">${site_name}</h2>
+							</#if>
+						</a>
 
-					<#include "${full_templates_path}/navigation.ftl" />
+						<#include "${full_templates_path}/navigation.ftl" />
+					</div>
 				</div>
 			</div>
 		</header>
