@@ -1,0 +1,26 @@
+.portlet-unboxed{
+    &.portlet-decorate{
+        .portlet{
+            &-content{
+                background: 0 none;
+                border: 0 none;
+                padding: 0;
+                border-radius: 0;
+            }
+        }
+    }
+}
+.portlet-layout{
+    .portlet-unboxed{
+        .portlet{
+            .portlet-title-text{
+                background-color: var(--color-tertiary-darker);
+                color: var(--color-primary);
+                font-weight: bold;
+                font-size: rem(20);
+                padding: 0 rem(16);
+                max-width: initial;
+            }
+        }
+    }
+}

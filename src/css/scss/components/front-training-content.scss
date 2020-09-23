@@ -1,0 +1,46 @@
+.#{$app}content {
+    &.portlet-decorate {
+        .portlet {
+            &-content {
+                background: 0 none;
+                border: 0 none;
+                padding: 0;
+                border-radius: 0;
+            }
+        }
+    }
+    &.portlet-asset-publisher{
+        .asset {
+            &-title {
+                color: var(--color-secondary);
+            }
+            &-abstract {
+                border: rem(1) solid var(--color-secondary);
+                padding: rem(10);
+            }
+        }
+
+        .metadata-author {
+            background-color: var(--color-tertiary);
+            padding: rem(10);
+            .user-info {
+                color: var(--color-secondary-dark);
+                font-weight: bold;
+                font-size: rem(20);
+            }
+            .date-info {
+            }
+        }
+    }
+}
+
+.portlet-layout {
+    .#{$app}content {
+        .portlet {
+            .portlet-header {
+                position: absolute;
+                left: -999999rem;
+            }
+        }
+    }
+}

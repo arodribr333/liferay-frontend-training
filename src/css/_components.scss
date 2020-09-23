@@ -13,7 +13,12 @@
 @import 'scss/portlet/portlet_hello_world';
 @import 'scss/components/theme-classic-base';
 
+// PORLETS CUSTOM STYLES
+@import 'scss/portlet/portlet-unboxed';
+
 // MY THEME COMPONENTS
 @import 'scss/components/front-training-button';
 @import 'scss/components/front-training-header';
 @import 'scss/components/front-training-navegation';
+@import 'scss/components/front-training-widget';
+@import 'scss/components/front-training-content';
